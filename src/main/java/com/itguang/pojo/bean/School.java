@@ -5,6 +5,8 @@ import lombok.Data;
 @Data
 public class School {
 
+    private String name ;
+
     private Student student;
 
 
