@@ -4,10 +4,11 @@ import com.itguang.repository.SchoolRepository;
 import com.itguang.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
-@Component
+@Service
 public class SchoolService {
 
     // @Autowired 默认采用 byType 模式自动装配，如果找到多个同类型的，会根据名字匹配。都不匹配，则会报错。
