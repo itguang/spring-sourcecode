@@ -1,5 +1,6 @@
 package com.itguang;
 
+import com.itguang.anno.MyAnno;
 import com.itguang.conditional.LinuxCondition;
 import com.itguang.conditional.MacCondition;
 import com.itguang.pojo.bean.component.Person;
@@ -33,6 +34,7 @@ public class ConditionalDemo {
     }
 
     @Bean("jobs")
+    @MyAnno("看得到我吗?")
     @Conditional({MacCondition.class})
     public Person bill() {
         Person person = new Person();
