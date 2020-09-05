@@ -1,12 +1,8 @@
 package com.itguang.service;
 
 import com.itguang.repository.SchoolRepository;
-import com.itguang.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 
 @Service
 public class SchoolService {
@@ -18,11 +14,15 @@ public class SchoolService {
 
 
     // @Resource 和 Autowired 一样,唯一的区别就是,@Resource 可以自己指定 bean name
-    @Resource(name = "studentRepository")
-    private StudentRepository studentRepository;
+//    @Resource(name = "studentRepository")
+//    private StudentRepository studentRepository;
 
     public String getSchoolName() {
         return schoolRepository.getSchoolName();
+    }
+
+    public void insert(String name, String address) {
+        schoolRepository.insert(name, address);
     }
 
 
