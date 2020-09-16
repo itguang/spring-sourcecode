@@ -1,13 +1,16 @@
 package com.itguang;
 
+import com.itguang.component.MyComponent;
 import com.itguang.factorybean.PersonFactoryBean;
 import com.itguang.pojo.bean.component.Person;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 @Configuration
+@Import({MyComponent.class})
 public class FactoryBeanDemo {
 
     public static void main(String[] args) {
