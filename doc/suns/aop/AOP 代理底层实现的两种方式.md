@@ -16,7 +16,7 @@
 
 ### 2.CGLib（基于父子继承）
 
-![image-20201004164902940](https://itguang.oss-cn-beijing.aliyuncs.com/20201004164903.png)
+!ctrl+; 搜索定位，不用鼠标，依赖插件： AceJump
 
 ![image-20201004171210004](https://itguang.oss-cn-beijing.aliyuncs.com/20201004171210.png)
 
