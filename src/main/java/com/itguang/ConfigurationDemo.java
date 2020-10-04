@@ -1,11 +1,14 @@
 package com.itguang;
 
+import com.itguang.beanpostprocessor.CglibAopPostProcessor;
 import com.itguang.pojo.User;
 import com.itguang.pojo.bean.Student;
 import com.itguang.pojo.bean.component.Person;
+import com.itguang.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 /**
  * 被 @Configuration 标志的类,相当于 spring-bean.xml 文件, 可以在此类中进行 Bean 的定义
