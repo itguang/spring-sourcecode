@@ -13,6 +13,9 @@ public class MyComponent {
     @Value("#{'${zf.ids:}'.split(',')}")
     private List<Integer> ids;
 
+    @Value("#{'${zf.ids:}'.split(',')}")
+    private List<String> strIds;
+
     public MyComponent() {
         System.out.println("---> MyConponent 构造方法。。。");
     }

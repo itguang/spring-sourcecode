@@ -14,9 +14,18 @@ import org.springframework.context.annotation.Import;
 public class ConfigValueDemo {
 
     public static void main(String[] args) {
+       // #{''.split(',')}
+        String[] split = "".split(",");
+
+
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(ConfigValueDemo.class);
         MyComponent myComponent = ctx.getBean(MyComponent.class);
         System.out.println("myComponent.getIds() = " + myComponent.getIds());
+    }
+
+
+    public void test(){
+
     }
 
 }
