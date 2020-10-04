@@ -8,6 +8,7 @@ public class MyApplicationListener implements ApplicationListener<ApplicationEve
 
     @Override
     public void onApplicationEvent(ApplicationEvent event) {
+        // ApplicationEvent 所有事件
         System.out.println("收到事件 ---> "+event);
 
     }

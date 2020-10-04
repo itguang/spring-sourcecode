@@ -11,7 +11,6 @@ import org.springframework.context.annotation.*;
 public class BeanPostProcessorDemo {
     public static void main(String[] args) {
 
-
         /*
             BeanPostProcessor: Bean 后置处理器,在 Bean 初始化前后执行.
             需要注意的是: 区分延迟初始化的 Bean ,只有在获取该 bean 时才会执行后置处理器

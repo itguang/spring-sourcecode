@@ -1,6 +1,6 @@
 # 关于 Aware 接口的一些用法
 
-实现不不不通的 Aware 接口可以获取不同的 Spring 内置 bean或者功能
+实现不同的 Aware 接口可以获取不同的 Spring 内置 bean或者功能
 
 ```java
 public class MyAware implements ApplicationContextAware, EmbeddedValueResolverAware {

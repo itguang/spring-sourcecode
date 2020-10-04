@@ -23,7 +23,8 @@ public class MyBeanDefinitionRegistryPostProcessor implements BeanDefinitionRegi
          */
 
         // 手动注册一个 BeanDefinition
-        AbstractBeanDefinition beanDefinition = BeanDefinitionBuilder.rootBeanDefinition(Student.class).getBeanDefinition();
+        AbstractBeanDefinition beanDefinition = BeanDefinitionBuilder.rootBeanDefinition(Student.class)
+                .getBeanDefinition();
         registry.registerBeanDefinition("my_custom_student",beanDefinition);
 
     }

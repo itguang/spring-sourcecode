@@ -5,7 +5,8 @@ import org.springframework.context.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
 
 @ComponentScan(value = "com.itguang", excludeFilters = {
-        @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = {Configuration.class, Bean.class, RestController.class})
+        @ComponentScan.Filter(type = FilterType.ANNOTATION,
+                classes = {Configuration.class, Bean.class, RestController.class})
 })
 public class ComponentScanDemo {
 

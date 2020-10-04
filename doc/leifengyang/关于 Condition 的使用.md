@@ -19,6 +19,24 @@ public interface Condition {
 }
 ```
 
+```java
+public class LinuxCondition implements Condition {
+
+    @Override
+    public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
+        ConfigurableListableBeanFactory beanFactory = context.getBeanFactory();
+        Environment environment = context.getEnvironment();
+        BeanDefinitionRegistry registry = context.getRegistry();
+
+        String osName = environment.getProperty("os.name");
+        if (osName.contains("Linux")) {
+            return true;
+        }
+        return false;
+    }
+}
+```
+
 自定义 Condition
 
 ```java

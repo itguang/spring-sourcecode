@@ -11,11 +11,11 @@ import org.springframework.context.annotation.Import;
 
 @Import({MyBeanFactoryPostProcessor.class, MyBeanDefinitionRegistryPostProcessor.class})
 @Configuration
-public class BeanFactoryPostProcessorDemo {
+public class BeanDefinitionRegistryPostProcessorDemo {
 
     public static void main(String[] args) {
 
-        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(BeanFactoryPostProcessorDemo.class);
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(BeanDefinitionRegistryPostProcessorDemo.class);
     }
 
     @Bean

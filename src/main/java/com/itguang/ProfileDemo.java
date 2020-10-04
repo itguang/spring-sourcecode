@@ -7,7 +7,7 @@ import org.springframework.context.annotation.*;
 // @Profile 注解还可以使用在 类上,只有指定的 profile 才能注入此类
 @Profile("test")
 @Configuration
-@PropertySource("classpath:my-profile.properties")
+@PropertySource("classpath:my-profile.properties") //指定配置文件
 public class ProfileDemo {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
