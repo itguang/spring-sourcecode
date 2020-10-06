@@ -1,7 +1,6 @@
 package com.itguang;
 
-import com.itguang.aop.LogAdvices;
-import com.itguang.repository.SchoolRepository;
+import com.itguang.aspect.LogAdvices;
 import com.itguang.service.SchoolService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Configuration;
@@ -9,8 +8,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Import;
 
 @Configuration
-@Import({SchoolService.class, SchoolRepository.class, LogAdvices.class})
-@EnableAspectJAutoProxy // 启动 Spring AOP 动态代理
+@Import({SchoolService.class, LogAdvices.class})
+@EnableAspectJAutoProxy // …启动 Spring AOP 动态代理
 public class AspectjDemo extends BaseDemo {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(AspectjDemo.class);
@@ -25,6 +24,4 @@ public class AspectjDemo extends BaseDemo {
         System.out.println("---> schoolName = " + schoolName);
 
     }
-
-
 }

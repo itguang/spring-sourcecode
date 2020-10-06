@@ -55,7 +55,7 @@ public class LogAdvices {
     }
 
     // 在外部可以这样引用这个切点
-    @AfterReturning("com.itguang.aop.LogAdvices.pointcut()")
+    @AfterReturning("com.itguang.aspect.LogAdvices.pointcut()")
     public void after(){
         System.out.println("------> AOP after ...");
 
