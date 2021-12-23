@@ -2,8 +2,10 @@ package com.itguang.pojo.bean;
 
 import com.itguang.pojo.User;
 import lombok.Data;
+import org.springframework.stereotype.Component;
 
 @Data
+@Component
 public class Student {
 
     public Student() {

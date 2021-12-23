@@ -16,8 +16,9 @@ import org.springframework.context.event.EventListener;
 public class ApplicationListenerDemo {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(ApplicationListenerDemo.class);
-        Student student = ctx.getBean(Student.class);
-        ctx.publishEvent(new MyApplicationEvent(student));
+        // 注册关闭钩子
+        ctx.registerShutdownHook();
+
         ctx.stop();
         ctx.close();
     }

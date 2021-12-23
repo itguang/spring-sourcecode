@@ -1,6 +1,5 @@
 package com.itguang.beanpostprocessor;
 
-import com.itguang.service.UserService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.cglib.proxy.Enhancer;
@@ -16,6 +15,7 @@ public class CglibAopPostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+
 
         // enhancer: 增强者
         Enhancer enhancer = new Enhancer();
