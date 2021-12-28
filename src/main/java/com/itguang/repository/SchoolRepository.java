@@ -1,6 +1,7 @@
 package com.itguang.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Repository;
 public class SchoolRepository {
 
     @Autowired
+    @Lazy
     private JdbcTemplate jdbcTemplate;
 
     private String schoolName = "家里蹲大学";

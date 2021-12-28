@@ -24,6 +24,12 @@ public class SchoolService {
        return "清华大学";
     }
 
+    private static String abc;
+    public String doSomething(String string){
+        System.out.println(string);
+        return string;
+    }
+
     public void insert(String name, String address) {
         System.out.println("insert...");
     }

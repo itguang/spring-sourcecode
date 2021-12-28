@@ -7,9 +7,9 @@ public class ProxyFactoryTest {
 
     public static void main(String[] args) {
         // 目标对象
-        Object targetObject;
+        Object targetObject = null;
         // Aspect
-        Advisor advisor;
+        Advisor advisor = null;
 
         ProxyFactory proxyFactory = new ProxyFactory();
         proxyFactory.addAdvisor(advisor);

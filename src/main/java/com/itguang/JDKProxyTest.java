@@ -12,12 +12,12 @@ import java.lang.reflect.Proxy;
 public class JDKProxyTest {
 
     public static void main(String[] args) {
-//        testJdkProxy();
-        testCglibProxy();
+        testJdkProxy();
+//        testCglibProxy();
     }
 
     public static void testJdkProxy() {
-        UserService userService = new UserService();
+        IUserService userService = new UserService();
 
         IUserService userServiceProxy = (IUserService) Proxy.newProxyInstance(JDKProxyTest.class.getClassLoader(),
                 userService.getClass().getInterfaces(),

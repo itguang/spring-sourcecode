@@ -5,10 +5,12 @@ import lombok.Data;
 
 @Data
 public class Human extends Animal implements Art {
+    @Override
     public void paint() {
 
     }
 
+    @Override
     public void sing() {
 
     }
